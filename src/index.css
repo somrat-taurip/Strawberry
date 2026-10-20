@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #d22715;
+  --color-secondary: #980a07;
+  --color-primary-dark: #7e1108;
+}
+
+@utility img-shadow {
+  filter: drop-shadow(40px 50px 25px #2b1800d4);
+}
+
+@utility text-shadow {
+  text-shadow: 2px 2px 2px #1128015b;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+
+  @media (min-width: 640px) {
+    padding-inline: 2rem;
+  }
+}
